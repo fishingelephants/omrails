@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>One Month Rails Project</title>
+    <title>fishingelephants</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -13,14 +13,19 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-dark bg-inverse">
       <div class="container">
-        <%= link_to "One Month Rails", root_path, class: "navbar-brand" %>
+        <%= link_to "fishingelephants", root_path, class: "navbar-brand" %>
         <ul class="nav navbar-nav">
           <li class="nav-item"><%= link_to "Home", root_path, class: "nav-link" %></li>
           <li class="nav-item"><%= link_to "About", about_path, class: "nav-link" %></li>
-          <li class="nav-item"><%= link_to "Contact", "#", class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to "Contact", contact_path, class: "nav-link" %></li>
         </ul>
       </div>
     </nav>
+
+    <!-- Flash Messages -->
+    <% flash.each do |name, message| %>
+      <%= content_tag(:div, message, class: "alert alert-info #{name}") %>
+    <% end %>
 
     <!-- Page Content -->
     <%= yield %>
@@ -30,7 +35,7 @@
       <div class="container">
         <hr>
         <center>
-          <p>© 2016 One Month</p>
+          <p>© 2016 fishingelephants</p>
         </center>
       </div>
     </footer>
