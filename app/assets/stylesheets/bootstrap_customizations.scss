@@ -18,7 +18,7 @@
 //
 // Grayscale and brand colors for use across Bootstrap.
 
-$gray-dark:                 #373a3c;
+$gray-dark:                 #004de6;
 $gray:                      #55595c;
 $gray-light:                #818a91;
 $gray-lighter:              #eceeef;
@@ -54,7 +54,7 @@ $border-width: 1px;
 //
 // Settings for the `<body>` element.
 
-$body-bg:    #1BBC9B;
+$body-bg:    #80aaff;
 $body-color: $gray-dark;
 
 
@@ -72,7 +72,7 @@ $link-hover-decoration: underline;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif: Calibri, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif;
 $font-family-base:       $font-family-sans-serif;
 
