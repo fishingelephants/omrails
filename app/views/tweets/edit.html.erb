@@ -1,8 +1,7 @@
 <div class="container">
 	<h1>Editing Tweet</h1>
-
-	<%= render 'form', tweet: @tweet %>
-
-	<%= link_to 'Show', @tweet %> |
-	<%= link_to 'Back', tweets_path %>
+	<div>
+		<%= render 'form', tweet: @tweet %>
+		<%= link_to 'Back', tweets_path %>
+	</div>
 </div>
