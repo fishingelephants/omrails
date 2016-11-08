@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def show
-  	@users = User.find(params[:id])
+  	@user = User.find_by(username: params[:username])
+  	@tweets = @user.tweets
   end
 end

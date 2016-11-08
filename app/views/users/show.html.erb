@@ -1,2 +1,22 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<div class="container">
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="card card-block">
+      <h4 class="card-title"><%= @user.username %></h4>
+      <p class="card-text"><%= @user.name %></p>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <ul class="list-group">
+      <% @tweets.each do |tweet| %>
+        <%= link_to tweet, class: "list-group-item list-group-item-action" do %>
+          <h5 class="list-group-item-heading"><%= tweet.user.username %></h5>
+          <p class="list-group-item-text"><%= tweet.content %></p>
+        <% end %>
+      <% end %>
+      </ul>
+    </div>
+</div>
+
+</div>
