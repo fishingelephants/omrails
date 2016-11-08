@@ -229,7 +229,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin (~> 1.0.0.pre4)
   acts_as_follower!
-  bootstrap (~> 4.0.0.alpha5)
+  bootstrap (~> 4.0.0.alpha4)
   byebug
   coffee-rails (~> 4.2)
   devise
