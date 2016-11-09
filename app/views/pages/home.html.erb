@@ -1,20 +1,27 @@
 <% if user_signed_in? %>
     <div class="jumbotron jumbotron-home">
         <div class="container">
-            <h1>Welcome!</h1>
+            <h1>Welcome Back!</h1>
         </div>
     </div>
 <% else %>
     <div class="jumbotron jumbotron-home">
         <div class="container">
-                <h1>Welcome to my website!</h1>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div>
-                <h3>Hi, I'm Leif, a developer that loves to code and getting new challenges.</h3>
-                <p><%= link_to "Portfolio", "#", class: "btn btn-secondary" %></p>
+                <div class="container">
+                <center><h1>Hi, I'm Leif, a developer that loves to code and getting new challenges!</h1></center>
+                </div>
+                <center>
+                <div class="btn-group">
+                  <a href="/tweets" class="btn btn-primary">Tweets</a>
+                  <a href="/items" class="btn btn-primary">Items</a>
+                  <a href="/feed" class="btn btn-primary">Feed</a>
+                </div>
+                </center>
             </div>
         </div>
     </div>
